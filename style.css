@@ -30,6 +30,7 @@
     transition: border-radius .5s ease;
 }
 
+/* Hover */
 .ex-3-square:hover{
     border-radius: 100px ;
 }
@@ -37,17 +38,48 @@
 .ex-4-square {
     width: 100px;
     height: 100px;
+    opacity: 1;
     background: red;
+    transition: opacity 1s ease-in;
 }
+
+/* Hover */
+.ex-4-square:hover{
+    opacity: 0;
+}
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition-property: width, height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
+
+/* Hover */
+.ex-5-square:hover{
+    width: 100px;
+    height: 100px;
+}
+
+/* Active */
+.ex-5-square:active{
+    width: 30px;
+    height: 30px;
+}
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+
+/* Hover */
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+   
+
 
 .ex-9-img {
     margin: 50px 100px;
