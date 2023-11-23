@@ -79,7 +79,15 @@
     filter: grayscale(100%);
 }
    
+.ex-7-img{
+    filter: none;
+    transition: filter 1s ease;
+}
 
+/* Hover */
+.ex-7-img:hover{
+    filter: grayscale(100%);
+}
 
 .ex-9-img {
     margin: 50px 100px;
