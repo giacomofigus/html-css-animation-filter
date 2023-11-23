@@ -81,12 +81,30 @@
    
 .ex-7-img{
     filter: none;
-    transition: filter 1s ease;
+    transition-property: filter, blur;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 /* Hover */
 .ex-7-img:hover{
     filter: grayscale(100%);
+    filter: blur(100%);
+    
+}
+
+.ex-8-img{
+    filter: none;
+    border-radius: none;
+    transition-property: filter, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.ex-8-img:hover{
+    filter: grayscale(100%);
+    filter: hue-rotate(100deg);
+    border-radius: 100px;
 }
 
 .ex-9-img {
