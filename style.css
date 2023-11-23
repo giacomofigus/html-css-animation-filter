@@ -4,7 +4,7 @@
     border: 1px solid red;
     transition: all .3s ease;
 }
-/* Hover */
+/* Hover 1*/
 .ex-1-square:hover{
     background-color: red;
 }
@@ -17,7 +17,7 @@
     
 }
 
-/* Hover */
+/* Hover 2*/
 .ex-2-square:hover{
     width: 200px;
 }
@@ -30,7 +30,7 @@
     transition: border-radius .5s ease;
 }
 
-/* Hover */
+/* Hover 3*/
 .ex-3-square:hover{
     border-radius: 100px ;
 }
@@ -43,7 +43,7 @@
     transition: opacity 1s ease-in;
 }
 
-/* Hover */
+/* Hover 4 */
 .ex-4-square:hover{
     opacity: 0;
 }
@@ -58,13 +58,13 @@
     transition-timing-function: ease-in-out;
 }
 
-/* Hover */
+/* Hover 5*/
 .ex-5-square:hover{
     width: 100px;
     height: 100px;
 }
 
-/* Active */
+/* Active 5*/
 .ex-5-square:active{
     width: 30px;
     height: 30px;
@@ -74,7 +74,7 @@
     width: 500px;
 }
 
-/* Hover */
+/* Hover 6 */
 .ex-6-img:hover{
     filter: grayscale(100%);
 }
@@ -86,7 +86,7 @@
     transition-timing-function: ease;
 }
 
-/* Hover */
+/* Hover 7 */
 .ex-7-img:hover{
     filter: grayscale(100%);
     filter: blur(100%);
@@ -101,6 +101,7 @@
     transition-timing-function: ease;
 }
 
+/* Hover 8 */
 .ex-8-img:hover{
     filter: grayscale(100%);
     filter: hue-rotate(100deg);
@@ -110,10 +111,32 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    border-radius: none;
+    filter: none;
+    transition-property: border-radius, filter, width, height;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
+
+/* Hover 9 */
+.ex-9-img:hover{
+    filter: brightness(120%) contrast(50%);
+    border-radius: 80px;
+    width: 500px;
+    
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 2s infinite;
+    
 }
+
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
