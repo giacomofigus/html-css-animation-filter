@@ -181,16 +181,44 @@
 }
 
 .ex-12-button:hover .ex-12-bottom-white{
-    animation: rotate-top-2 3s infinite;
+    animation: rotate-bottom-1 3s infinite;
 }
 
-@keyframes rotate-top-2 {
+@keyframes rotate-bottom-1 {
     0%{right: 5%;}
     50%{right:calc(100% - 60px);}
     100%{right:0%}
 }
 /* ES 12 END */
 
+
+/* ES 13 START */
+.ex-13-button:hover .ex-13-top-white{
+    animation: rotate-top-2 2s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: rotate-bottom-2 2s linear;
+}
+
+@keyframes rotate-top-2 {
+    0%{left:10%; top: -10px;}
+    30% {left: calc(100% - 30px);top: -10px; }
+    45%{left: calc(100% - 30px); top: 100%;}
+    75%{left: -10px; top:100%;}
+    90%{left:-10px; top:-10px;}
+    100%{left:10%; top:-10px;}
+}
+
+@keyframes rotate-bottom-2{
+    0%{right:10%; bottom:-10px}
+    30%{right: calc(100% - 30px);bottom:-10px;}
+    45%{right: calc(100% - 30px);bottom:100%;}
+    75%{right:-10px; bottom:100%;}
+    90%{right:-15px; bottom:-10px;}
+    100%{right: 10%;bottom: -10px;}
+}
+/* ES 13 END */
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
